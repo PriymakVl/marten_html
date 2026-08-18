@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+
+    <link rel="stylesheet" href="../assets/css/common/bootstrap.min.css">
+
+    <script src="../assets/js/common/jquery-1.12.0.min.js"></script>
+    <script src="../assets/js/admin/popper.min.js"></script>
+    <script src="../assets/js/common/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container mb-3">
+
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../public/index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="categories.html">Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       data-toggle="dropdown"
+                       href="#">
+                        Pages
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">About</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Contact</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- end menu -->
+
+</div>
+
+
+<div class="container">
+
+    <h1 class="text-center">Categories</h1>
+
+    <!-- Filter -->
+    <div class="form-group">
+        <label for="parentCategory">Filter by main category</label>
+
+        <select class="form-control" id="parentCategory" style="width: 250px;">
+            <option value="">All categories</option>
+            <option value="dogs-food">Dogs food</option>
+            <option value="cats-food">Cats food</option>
+            <option value="fish-food">Fish food</option>
+        </select>
+    </div>
+
+    <!-- Add category -->
+    <a href="form_category.html"
+       class="btn btn-primary mb-3"
+       role="button">
+        Add subcategory
+    </a>
+
+    <!-- Categories table -->
+    <table class="table table-bordered table-hover">
+
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Subcategory name</th>
+            <th scope="col">Parent category</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <th scope="row">1</th>
+
+            <td>
+                <a href="#">Eggs</a>
+            </td>
+
+            <td>Dogs food</td>
+
+            <td>
+                <a href="#" class="btn-sm btn-danger">Delete</a>
+                <a href="#" class="btn-sm btn-primary">Edit</a>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+
+            <td>
+                <a href="#">Carrots</a>
+            </td>
+
+            <td>Dogs food</td>
+
+            <td>
+                <a href="#" class="btn-sm btn-danger">Delete</a>
+                <a href="#" class="btn-sm btn-primary">Edit</a>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+
+            <td>
+                <a href="#">Meat</a>
+            </td>
+
+            <td>Cats food</td>
+
+            <td>
+                <a href="#" class="btn-sm btn-danger">Delete</a>
+                <a href="#" class="btn-sm btn-primary">Edit</a>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">4</th>
+
+            <td>
+                <a href="#">Fish</a>
+            </td>
+
+            <td>Cats food</td>
+
+            <td>
+                <a href="#" class="btn-sm btn-danger">Delete</a>
+                <a href="#" class="btn-sm btn-primary">Edit</a>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">5</th>
+
+            <td>
+                <a href="#">Rice</a>
+            </td>
+
+            <td>Fish food</td>
+
+            <td>
+                <a href="#" class="btn-sm btn-danger">Delete</a>
+                <a href="#" class="btn-sm btn-primary">Edit</a>
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row">6</th>
+
+            <td>
+                <a href="#">Veggies</a>
+            </td>
+
+            <td>Fish food</td>
+
+            <td>
+                <a href="#" class="btn-sm btn-danger">Delete</a>
+                <a href="#" class="btn-sm btn-primary">Edit</a>
+            </td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+</body>
+</html>
